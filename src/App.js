@@ -1,4 +1,7 @@
+import React from 'react';
+import { Link, BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import logo from './logo.svg';
+import Navegador from ".Navegador.js"
 import './App.css';
 
 function App() {
@@ -15,9 +18,19 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React 4 life
         </a>
       </header>
+      <body>
+        <Router>
+          <Navegador>
+            
+          </Navegador>
+        </Router>
+        
+
+
+      </body>
     </div>
   );
 }
