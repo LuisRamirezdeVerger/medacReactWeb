@@ -1,5 +1,8 @@
 //import "/Coding Stuff/reactWebMedac/medac-react-web/src/componentes/navegador"
-import  "../componentes/Navegador.css"
+import React from "react";
+import { Link,  BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import  "./Navegador.css";
 
 const Navegador = () => {
     return (
@@ -21,10 +24,10 @@ const Navegador = () => {
           </ul>
         </nav>
         <Switch>
-          <Route path="/" exact>
+          {/* <Route path="/" exact>
             <Inicio />
-          </Route>
-          <Route path="/pagina1">
+          </Route> */}
+          {/* <Route path="/pagina1">
             <Pagina1 />
           </Route>
           <Route path="/pagina2">
@@ -32,7 +35,7 @@ const Navegador = () => {
           </Route>
           <Route path="/pagina3">
             <Pagina3 />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     );
